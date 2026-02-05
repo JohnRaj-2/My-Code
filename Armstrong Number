@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+ int num;
+ 
+ void armstrng(int n){
+    int N,sum=0;
+    while(n>0){
+    N = n%10;
+    sum = sum + (N*N*N);
+    n = n/10;
+    }
+    
+    if(sum == num){
+        cout << "This is an Armstrong Number." << endl;
+    }
+    else{
+        cout << "This is not an Armstrong Number.";
+    }
+ }
+ 
+ int main(){
+     cout << "Type a number to check whether it is Armstrong or not :";
+     cin>>num;
+     armstrng(num);
+    return 0;
+ }
