@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void prints(int n){
+    if(n==0)
+    return;
+    
+    prints(n-1);
+    cout << n << endl;
+    
+}
+
+
+int main(){
+    cout << "How many numbers you want to print? :";
+    int n;
+    cin >> n;
+    prints(n);
+}
