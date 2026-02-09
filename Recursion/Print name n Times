@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int i=1;
+void func(int n){
+    
+    if(n==0)
+        return;
+    
+    cout << i <<" John" << endl;
+    i++;
+    func(n-1);
+}
+
+int main(){
+    int n;
+    cout << "Tell me how many times you need to print the name:";
+    cin >> n;
+    cout << "Here are the printed names:\n";
+    func(n);
+}
